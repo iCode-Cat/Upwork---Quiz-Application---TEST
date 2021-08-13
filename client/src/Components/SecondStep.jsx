@@ -1,8 +1,8 @@
 import React from 'react';
 import style from '../Scss/Steps.module.scss';
 
-const FirstStep = ({ HeroJSON }) => {
-  const step = HeroJSON.step1;
+const SecondStep = ({ HeroJSON }) => {
+  const step = HeroJSON.step2;
   const { button, fields } = step;
   return (
     <section className={style.wrapper} id='step1'>
@@ -15,4 +15,4 @@ const FirstStep = ({ HeroJSON }) => {
   );
 };
 
-export default FirstStep;
+export default SecondStep;

@@ -2,8 +2,8 @@ import React from 'react';
 import style from '../Scss/Hero.module.scss';
 import Button from './Button';
 import Logo from '../Images/logo.svg';
-import HeroJSON from '../Json/Hero.json';
-const Hero = () => {
+
+const Hero = ({ formStateHandler, form, HeroJSON }) => {
   return (
     <section
       style={{ backgroundImage: `url('/background.jpg')` }}
@@ -11,12 +11,23 @@ const Hero = () => {
     >
       <div className={style.hero_container}>
         <div className={style.hero}>
-          <h1 className={style.title}>{HeroJSON.title} </h1>
+          <h1 className={style.title}>{HeroJSON.welcomePage.title} </h1>
           <p
-            dangerouslySetInnerHTML={{ __html: HeroJSON.sub_title }}
+            dangerouslySetInnerHTML={{ __html: HeroJSON.welcomePage.sub_title }}
             className={style.description}
           />
-          <Button text='Start Quiz' type='btnBlue' size='btnSm' />
+          <span
+            onClick={() =>
+              form.step === null &&
+              formStateHandler({ field: 'step', value: 1 })
+            }
+          >
+            <Button
+              text={HeroJSON.welcomePage.button_text}
+              type='btnBlue'
+              size='btnSm'
+            />
+          </span>
         </div>
         <img src={Logo} alt='logo-company' className={style.logo} />
       </div>

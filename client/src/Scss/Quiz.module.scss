@@ -1,0 +1,14 @@
+.steps {
+  width: 100vw;
+  max-width: 971px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.rope {
+  position: absolute;
+  top: 0;
+}
