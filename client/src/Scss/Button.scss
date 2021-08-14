@@ -2,7 +2,14 @@
   border-radius: 100px;
   font-size: 1.8rem;
   font-weight: 700;
+  // For temporary
+  min-height: 50px;
 }
+
+.btnShadow {
+  box-shadow: 0px 17px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
 .btnSm {
   padding: 1.1rem 3.1rem;
 }

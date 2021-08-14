@@ -28,6 +28,8 @@ const Quiz = () => {
     });
   };
 
+  console.log(form);
+
   return (
     <main className={style.wrapper}>
       <article>
@@ -46,9 +48,27 @@ const Quiz = () => {
             }
             alt=''
           />
-          {form.step >= 1 && <FirstStep HeroJSON={HeroJSON} />}
-          {form.step >= 2 && <SecondStep HeroJSON={HeroJSON} />}
-          {form.step >= 3 && <ThirdStep HeroJSON={HeroJSON} />}
+          {form.step >= 1 && (
+            <FirstStep
+              HeroJSON={HeroJSON}
+              formStateHandler={formStateHandler}
+              form={form}
+            />
+          )}
+          {form.step >= 2 && (
+            <SecondStep
+              HeroJSON={HeroJSON}
+              formStateHandler={formStateHandler}
+              form={form}
+            />
+          )}
+          {form.step >= 3 && (
+            <ThirdStep
+              HeroJSON={HeroJSON}
+              formStateHandler={formStateHandler}
+              form={form}
+            />
+          )}
         </section>
       </article>
     </main>

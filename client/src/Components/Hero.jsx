@@ -23,6 +23,7 @@ const Hero = ({ formStateHandler, form, HeroJSON }) => {
             }
           >
             <Button
+              shadow
               text={HeroJSON.welcomePage.button_text}
               type='btnBlue'
               size='btnSm'

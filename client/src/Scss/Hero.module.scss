@@ -19,7 +19,10 @@
   justify-content: space-between;
   justify-items: center;
   width: 100vw;
-  max-width: 1036px;
+  // padding: 0 0;
+  // max-width: 1036px;
+  max-width: 1136px;
+  padding: 0 5rem;
 }
 
 .hero {
@@ -36,4 +39,8 @@
     font-size: 1.8rem;
     color: #565656;
   }
+}
+.logo {
+  width: 100%;
+  max-width: 263px;
 }
