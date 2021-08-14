@@ -38,11 +38,11 @@
         "text": "Are your organization working on the cloud",
         "buttons": [
           {
-            "text": "yes",
+            "text": "Yes",
             "icon": "icon"
           },
           {
-            "text": "no",
+            "text": "No",
             "icon": "icon"
           }
         ]
@@ -53,7 +53,7 @@
         "text": "Are your organization working on the cloud",
         "buttons": [
           {
-            "text": "yes",
+            "text": "Yes",
             "icon": "icon"
           },
           {
@@ -61,10 +61,13 @@
             "icon": null
           },
           {
-            "text": "no",
+            "text": "No",
             "icon": "icon"
           }
         ]
+      },
+      "question3": {
+        "text": "Number of employees"
       }
     },
     "button": "Next Step"

@@ -7,7 +7,7 @@ const FirstStep = ({ HeroJSON, formStateHandler, form }) => {
   const { button, fields, index } = step;
   console.log(fields);
   return (
-    <section className={style.wrapper} id='step1'>
+    <section className={`${style.wrapper}  ${style.stepFirst}`} id='step1'>
       <div className={style.step}>
         <strong>Step {index}</strong>
         <p>of 3</p>
@@ -39,7 +39,7 @@ const FirstStep = ({ HeroJSON, formStateHandler, form }) => {
       </div>
       <span
         onClick={() =>
-          form.step === 1 && formStateHandler({ field: 'step', value: 2 })
+          form.step === index && formStateHandler({ field: 'step', value: 2 })
         }
       >
         <Button

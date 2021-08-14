@@ -56,11 +56,22 @@ const Quiz = () => {
             />
           )}
           {form.step >= 2 && (
-            <SecondStep
-              HeroJSON={HeroJSON}
-              formStateHandler={formStateHandler}
-              form={form}
-            />
+            <div
+              style={{
+                background: '#E4F6FC',
+                display: 'flex',
+                alignItems: 'center',
+                width: '99vw',
+                justifyContent: 'center',
+                marginTop: '10rem',
+              }}
+            >
+              <SecondStep
+                HeroJSON={HeroJSON}
+                formStateHandler={formStateHandler}
+                form={form}
+              />
+            </div>
           )}
           {form.step >= 3 && (
             <ThirdStep
